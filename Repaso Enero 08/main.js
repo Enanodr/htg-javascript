@@ -10,8 +10,8 @@
 function obtenerMenoresQue30(numeros) {
   let resultado = [];
 
-  for (let indice = 0; indice < numeros.length; indice++) {
-    if (numeros[indice] < 30) {
+  for (let i = 0; i < numeros.length; i++) {
+    if (numeros[i] < 30) {
       resultado.push(numeros[i]);
     } else {
       i++;
@@ -21,6 +21,7 @@ function obtenerMenoresQue30(numeros) {
   return resultado;
 }
 
+ad
 /*
 
 Reparar la función de modo que dada una lista de nombres, devuelva los nombres en un solo string separándolos por comas.
