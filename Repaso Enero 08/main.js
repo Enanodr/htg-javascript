@@ -12,10 +12,8 @@ function obtenerMenoresQue30(numeros) {
 
   for (let indice = 0; indice < numeros.length; indice++) {
     if (numeros[indice] < 30) {
-      resultado.push(numeros[i]);
-    } else {
-      i++;
-    }
+      resultado.push(numeros[indice]);
+    } 
   }
 
   return resultado;
@@ -34,9 +32,13 @@ function obtenerNombresSeparadosPorComa(listaNombres){
   let resultado = '';
   let posicion = 0;
 
-  while (posicion <= listaNombres) {
-    resultado = resultado + listaNombres[posicion];
-    posicion+;
+  while (posicion < listaNombres.length) { /* le quite el = y le agregue .length para que compare posicion con el largo de la lista*/
+    if (posicion == 0) {              /*le agregue una condicion que dice que si posicion es 0 solo agregue el nombre en esa posicion a resultado...*/
+      resultado = resultado + listaNombres[posicion];
+    } else {    /*... sino es igual a 0 que le agregue a resultado una coma y el nombre en esa posicion*/
+      resultado = resultado + ',' + listaNombres[posicion]
+    }
+    posicion++;  /*le faltaba un signo + para que a la variable posicion se le sume 1 cuando haga el bucle*/
   }
 
   return resultado;
