@@ -6,7 +6,7 @@
   - Caso 2: Al llamar la función de ésta manera: obtenerMenoresQue30([30]) devuelve un array así: []
 
 */
-
+/*
 function obtenerMenoresQue30(numeros) {
   let resultado = [];
 
@@ -21,7 +21,7 @@ function obtenerMenoresQue30(numeros) {
 //let listaNum = [30];
 let listaNum = [1,32,2,3]
 console.log(obtenerMenoresQue30(listaNum));
-
+*/
 /*
 
 Reparar la función de modo que dada una lista de nombres, devuelva los nombres en un solo string separándolos por comas.
@@ -30,15 +30,22 @@ Caso 1: Al llamar la función de ésta manera: obtenerNombresSeparadosPorComa(['
 Caso 2: Al llamar la función de ésta manera: obtenerMenoresQue30([30]) devuelve un array así: []
 
 */
-/*
+
 function obtenerNombresSeparadosPorComa(listaNombres){
   let resultado = '';
   let posicion = 0;
 
-  while (posicion <= listaNombres) {
-    resultado = resultado + listaNombres[posicion];
-    posicion+;
-  }
+  while (posicion < listaNombres.length) {
+    if (posicion == 0){
+      resultado = listaNombres[posicion];
+      posicion++;
+    }else{
+      resultado = resultado + ', ' + listaNombres[posicion];
+      posicion++;
+    }
+  }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
 
   return resultado;
-}*/
+}
+
+console.log(obtenerNombresSeparadosPorComa(['Diego','Kike','Maru','Sebas']));
