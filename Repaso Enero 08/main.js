@@ -33,11 +33,11 @@ function obtenerNombresSeparadosPorComa(listaNombres){
   let resultado = '';
   let posicion = 0;
 
-  while (posicion <= listaNombres.length)
+  while (posicion < listaNombres.length)
    {
-    resultado = resultado + listaNombres[posicion];
+    resultado = resultado + listaNombres[posicion] + ",";
     posicion++;
   }
 
-  return listaNombres;
+  return resultado.substring(0, resultado.length-1);
 }
