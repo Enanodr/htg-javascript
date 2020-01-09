@@ -30,7 +30,7 @@ Caso 1: Al llamar la función de ésta manera: obtenerNombresSeparadosPorComa(['
 Caso 2: Al llamar la función de ésta manera: obtenerMenoresQue30([30]) devuelve un array así: []
 
 */
-
+  
 function obtenerNombresSeparadosPorComa(listaNombres){
     let resultado = '';
     let posicion = 0;
