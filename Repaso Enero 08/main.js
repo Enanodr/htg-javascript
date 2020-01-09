@@ -11,33 +11,16 @@ function obtenerMenoresQue30(numeros) {
   let resultado = [];
 
   for (let indice = 0; indice < numeros.length; indice++) {
+    console.log('indice entrante ' + indice);
     if (numeros[indice] < 30) {
-      resultado.push(numeros[i]);
-    } else {
-      i++;
-    }
+      console.log('indice en el if ' + indice);
+      resultado.push(numeros[indice]);
+    } 
+
+    console.log('indice saliente ' + indice);
+
   }
 
   return resultado;
-}
+} 
 
-/*
-
-Reparar la función de modo que dada una lista de nombres, devuelva los nombres en un solo string separándolos por comas.
-Todo estaría bien si:
-Caso 1: Al llamar la función de ésta manera: obtenerNombresSeparadosPorComa(['Diego','Kike', 'Maru', 'Sebas']) devuelve algo así: 'Diego, Kike, Maru, Sebas'
-Caso 2: Al llamar la función de ésta manera: obtenerMenoresQue30([30]) devuelve un array así: []
-
-*/
-
-function obtenerNombresSeparadosPorComa(listaNombres){
-  let resultado = '';
-  let posicion = 0;
-
-  while (posicion <= listaNombres) {
-    resultado = resultado + listaNombres[posicion];
-    posicion+;
-  }
-
-  return resultado;
-}
