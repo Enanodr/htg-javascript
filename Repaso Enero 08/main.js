@@ -13,8 +13,6 @@ function obtenerMenoresQue30(numeros) {
   for (let i = 0; i < numeros.length; i++) {
     if (numeros[i] < 30) {
       resultado.push(numeros[i]);
-    } else {
-      i++;
     }
   }
 
