@@ -36,13 +36,11 @@ function obtenerNombresSeparadosPorComa(listaNombres){
     let posicion = 0;
   
     while (posicion < listaNombres.length) {
-      console.log(posicion);
       if(posicion === listaNombres.length -1){
         resultado = resultado + listaNombres[posicion];
       }else{
         resultado = resultado + listaNombres[posicion] + ', ';
       }
-      console.log(resultado);
       posicion++;
     }
   
