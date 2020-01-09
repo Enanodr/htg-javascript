@@ -10,16 +10,17 @@
 function obtenerMenoresQue30(numeros) {
   let resultado = [];
 
-  for (let indice = 0; indice < numeros.length; indice++) {
-    if (numeros[indice] < 30) {
+  for (let i = 0; i < numeros.length; i++) {
+    if (numeros[i] < 30) {
       resultado.push(numeros[i]);
-    } else {
-      i++;
     }
   }
 
   return resultado;
 }
+//let listaNum = [30];
+let listaNum = [1,32,2,3]
+console.log(obtenerMenoresQue30(listaNum));
 
 /*
 
@@ -29,7 +30,7 @@ Caso 1: Al llamar la función de ésta manera: obtenerNombresSeparadosPorComa(['
 Caso 2: Al llamar la función de ésta manera: obtenerMenoresQue30([30]) devuelve un array así: []
 
 */
-
+/*
 function obtenerNombresSeparadosPorComa(listaNombres){
   let resultado = '';
   let posicion = 0;
@@ -40,4 +41,4 @@ function obtenerNombresSeparadosPorComa(listaNombres){
   }
 
   return resultado;
-}
+}*/
