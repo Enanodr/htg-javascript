@@ -12,9 +12,7 @@ function obtenerMenoresQue30(numeros) {
 
   for (let indice = 0; indice < numeros.length; indice++) {
     if (numeros[indice] < 30) {
-      resultado.push(numeros[i]);
-    } else {
-      i++;
+      resultado.push(numeros[indice]);
     }
   }
 
@@ -31,13 +29,14 @@ Caso 2: Al llamar la función de ésta manera: obtenerMenoresQue30([30]) devuelv
 */
 
 function obtenerNombresSeparadosPorComa(listaNombres){
-  let resultado = '';
+  let resultado = listaNombres;
   let posicion = 0;
 
   while (posicion <= listaNombres) {
     resultado = resultado + listaNombres[posicion];
-    posicion+;
+    posicion++;
+    
   }
 
-  return resultado;
+  return listaNombres;
 }
