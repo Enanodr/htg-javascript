@@ -8,16 +8,15 @@
 */
 
 function obtenerMenoresQue30(numeros) {
+  
   let resultado = [];
-
-  for (let indice = 0; indice < numeros.length; indice++) {
-    if (numeros[indice] < 30) {
-      resultado.push(numeros[i]);
-    } else {
-      i++;
-    }
+  for (let indice = 0; indice < numeros.length; indice++) 
+  {
+      if (numeros[indice] < 30)
+      {
+      resultado.push(numeros[indice]);
+      }
   }
-
   return resultado;
 }
 
@@ -34,10 +33,11 @@ function obtenerNombresSeparadosPorComa(listaNombres){
   let resultado = '';
   let posicion = 0;
 
-  while (posicion <= listaNombres) {
+  while (posicion <= listaNombres.length)
+   {
     resultado = resultado + listaNombres[posicion];
-    posicion+;
+    posicion++;
   }
 
-  return resultado;
+  return listaNombres;
 }
