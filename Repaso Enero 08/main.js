@@ -29,13 +29,16 @@ Caso 2: Al llamar la función de ésta manera: obtenerMenoresQue30([30]) devuelv
 */
 
 function obtenerNombresSeparadosPorComa(listaNombres){
-  let resultado = '';
+  let resultado = (listaNombres);
   let posicion = 0;
 
-  while (posicion <= listaNombres) {
-    resultado = resultado + listaNombres[posicion];
-    posicion++;
+  while (posicion < listaNombres) {
+    resultado = resultado + listaNombres [posicion];
+  
+    posicion++;{  
+    }
   }
-
+   
   return resultado;
+  
 }
