@@ -11,13 +11,10 @@ function obtenerMenoresQue30(numeros) {
   let resultado = [];
 
   for (let indice = 0; indice < numeros.length; indice++) {
-    console.log('indice entrante ' + indice);
+  
     if (numeros[indice] < 30) {
-      console.log('indice en el if ' + indice);
       resultado.push(numeros[indice]);
     } 
-
-    console.log('indice saliente ' + indice);
 
   }
 
