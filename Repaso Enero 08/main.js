@@ -33,7 +33,7 @@ function obtenerNombresSeparadosPorComa(listaNombres){
   let posicion = 0;
 
   while (posicion < listaNombres.length) { /* le quite el = y le agregue .length para que compare posicion con el largo de la lista*/
-    if (posicion == 0) {              /*le agregue una condicion que dice que si posicion es 0 solo agregue el nombre en esa posicion a resultado...*/
+    if (posicion === 0) {              /*le agregue una condicion que dice que si posicion es 0 solo agregue el nombre en esa posicion a resultado...*/
       resultado = resultado + listaNombres[posicion];
     } else {    /*... sino es igual a 0 que le agregue a resultado una coma y el nombre en esa posicion*/
       resultado = resultado + ',' + listaNombres[posicion]
