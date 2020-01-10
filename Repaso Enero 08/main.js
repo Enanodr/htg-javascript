@@ -35,7 +35,7 @@ function obtenerNombresSeparadosPorComa(listaNombres){
   let posicion = 0;
 
   while (posicion < listaNombres.length) {
-    resultado = resultado  + listaNombres[posicion] + ',' ;
+    resultado = resultado + listaNombres[posicion] + ', ';
    
 
     posicion++;
