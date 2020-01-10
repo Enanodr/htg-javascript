@@ -28,12 +28,15 @@ Caso 2: Al llamar la función de ésta manera: obtenerNombresSeparadosPorComa([]
 */
 
 function obtenerNombresSeparadosPorComa(listaNombres){
-  let resultado = 'Diego, Kike, Maru, Sebas';
+  let resultado = '';
   let posicion = 0;
 
-  while (posicion <= listaNombres) {
-    resultado = resultado + listaNombres[posicion];
-    posicion+;
+  while (posicion < listaNombres.length) {
+    if (posicion == 0) { 
+    } else {
+      resultado = resultado + ',' + listaNombres[posicion]
+    }
+    posicion++;
   }
 
   return resultado; 
