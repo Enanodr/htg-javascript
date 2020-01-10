@@ -28,7 +28,7 @@ Caso 2: Al llamar la función de ésta manera: obtenerNombresSeparadosPorComa([]
 */
 
 function obtenerNombresSeparadosPorComa(listaNombres){
-  let resultado = '';
+  let resultado = 'Diego, Kike, Maru, Sebas';
   let posicion = 0;
 
   while (posicion <= listaNombres) {
